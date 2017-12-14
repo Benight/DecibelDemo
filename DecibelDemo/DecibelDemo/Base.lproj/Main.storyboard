@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16G1036" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8w-af-1Hp">
+                                <rect key="frame" x="300" y="520" width="300" height="30"/>
+                                <state key="normal" title="结束"/>
+                                <connections>
+                                    <action selector="processStopAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qc9-eF-L2j"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeQ-ip-2hi">
+                                <rect key="frame" x="279" y="70" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dID-h3-aqQ">
+                                <rect key="frame" x="0.0" y="520" width="300" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="开始"/>
+                                <connections>
+                                    <action selector="processStartAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s13-PE-kb9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dID-h3-aqQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Apt-gq-Vqb"/>
+                            <constraint firstItem="L8w-af-1Hp" firstAttribute="leading" secondItem="dID-h3-aqQ" secondAttribute="trailing" id="SE8-d7-yi9"/>
+                            <constraint firstItem="L8w-af-1Hp" firstAttribute="height" secondItem="dID-h3-aqQ" secondAttribute="height" id="T4a-JN-KxX"/>
+                            <constraint firstAttribute="trailing" secondItem="L8w-af-1Hp" secondAttribute="trailing" id="TZX-GQ-wVM"/>
+                            <constraint firstItem="L8w-af-1Hp" firstAttribute="width" secondItem="dID-h3-aqQ" secondAttribute="width" id="TdE-y8-sgU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="L8w-af-1Hp" secondAttribute="bottom" constant="50" id="WWe-IO-Z2a"/>
+                            <constraint firstItem="aeQ-ip-2hi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZtW-rR-YBN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dID-h3-aqQ" secondAttribute="bottom" constant="50" id="mNf-Vz-Jmq"/>
+                            <constraint firstItem="aeQ-ip-2hi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="yjc-A7-Jg8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dbLabel" destination="aeQ-ip-2hi" id="aOP-u1-AtW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
